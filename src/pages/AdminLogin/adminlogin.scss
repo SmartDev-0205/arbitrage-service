@@ -1,0 +1,23 @@
+.admin_login {
+  @apply flex items-center justify-center h-[100vh] bg-[#1C295D];
+  > div {
+    @apply flex flex-col items-center bg-black/[0.1] rounded-[24px] px-[28px] pt-[80px] pb-[40px] shadow-lg relative;
+    img {
+      @apply w-[120px] absolute -top-[60px];
+    }
+    .login_header {
+      @apply flex flex-col items-center gap-[20px];
+      h2 {
+        @apply text-white text-[50px];
+      }
+    }
+    .form-group {
+      label {
+        @apply text-white;
+      }
+      input {
+        @apply text-[#1C295D];
+      }
+    }
+  }
+}

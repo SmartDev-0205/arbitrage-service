@@ -1,0 +1,38 @@
+header {
+  @apply flex justify-between items-center gap-[10px] w-full
+  px-[4vw] xl:px-[6vw] 2xl:px-[10vw] fixed py-[40px] z-[10];
+  .logo-container {
+    img {
+      @apply max-w-[140px] sm:max-w-[200px];
+    }
+  }
+
+  .navbar-container {
+    @apply flex items-center gap-[14px] lg:gap-[20px] xl:gap-[60px];
+    .navbar-list {
+      @apply flex gap-[14px] lg:gap-[20px] xl:gap-[28px] text-white text-[18px] font-[400];
+      p {
+        @apply border-b-[1px] border-transparent cursor-pointer;
+        &:hover, &:active {
+          @apply text-blue border-b-[2px] border-blue;
+        }
+      }
+
+      .item-active {
+        @apply text-blue font-[700] border-b-[2px] border-blue;
+      }
+    }
+    .auth-navbar {
+      @apply flex gap-[14px] lg:gap-[20px] xl:gap-[28px] items-center;
+      .auth-action {
+        @apply flex gap-[14px] lg:gap-[20px] xl:gap-[28px];
+        > p {
+          @apply text-white text-[18px] font-[400] cursor-pointer;
+        }
+      }
+    }
+  }
+}
+.header-container {
+  @apply bg-xthink-blue/[0.3] border-b-[1px] border-xthink-blue py-[18px] transition-all duration-[0.5];
+}

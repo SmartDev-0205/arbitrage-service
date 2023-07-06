@@ -1,0 +1,30 @@
+menu {
+  @apply bg-black opacity-[0.95] h-full w-[315px] fixed top-0 left-0 z-[1000] overflow-x-hidden;
+  .menu-header {
+    @apply flex items-center h-[106px] px-[20px] py-[30px];
+    img {
+      @apply max-w-[100px];
+    }
+    span {
+      @apply absolute top-0 right-[18px] text-[32px] ml-[50px] cursor-pointer text-white;
+      &:hover {
+        @apply text-blue;
+      }
+    }
+  }
+  .nav-group {
+    .nav-list {
+      @apply px-[30px];
+      .nav-item {
+        @apply flex items-center gap-[17px] pt-[20px] text-white text-[18px] font-[400];
+        &:hover, &:active {
+          @apply font-[600] text-blue;
+        }
+      }
+
+      .item-active {
+        @apply text-blue font-[600];
+      }
+    }
+  }
+}

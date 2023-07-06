@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './App';
+@import './components/Layout/layout';
+@import './components/AdminLayout/adminlayout';
+@import './components/Header/header';
+@import './components/Header/Menu/menu';
+@import './components/Footer/footer';
+
+@import './pages/HomePage/homepage';
+@import './pages/Account/account';
+@import './pages/Login/login';
+@import './pages/Register/register';
+@import './pages/OtpVerify/otpverify';
+@import './pages/AdminLogin/adminlogin';
